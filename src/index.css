@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+body .links a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: aquamarine;
+  margin: 20px;
+  color: black;
+}
+
+.links a.active {
+  background-color: blueviolet;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

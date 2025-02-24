@@ -18,18 +18,22 @@ export default function ListaPostsPage() {
 
     return (
         <>
-            {
 
-                lista.map((post) => (
+            <div className="container">
+                {
 
-                    <div className="post" key={post.id}>
-                        <h2>{post.title}</h2>
-                        <img src={post.image} alt={post.title} />
-                        <span>{post.content}</span>
-                        <h5>{post.tags}</h5>
-                    </div>
-                ))
-            }
+                    lista.map((post) => (
+
+                        <div className="post" key={post.id}>
+                            <h2>{post.title}</h2>
+                            <img src={post.image} alt={post.title} />
+                            <span>{post.content}</span>
+                            <h5>{post.tags}</h5>
+                        </div>
+                    ))
+                }
+            </div>
+
 
         </>
     )

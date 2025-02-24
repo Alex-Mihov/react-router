@@ -4,7 +4,7 @@ export default function Header() {
 
     return (
         <>
-            <div>
+            <div className="links">
                 <NavLink to="/">Homepage</NavLink>
                 <NavLink to="/chisiamo">Chi Siamo</NavLink>
                 <NavLink to="/listaposts">Lista Posts</NavLink>
