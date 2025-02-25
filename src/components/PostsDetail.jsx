@@ -23,8 +23,14 @@ export default function PostDetail() {
     return (
 
         <>
+
             <h2>Pagina dettaglio post del dolce {post.title}</h2>
-            <img src={post.image} alt={post.title} />
+            <img className="img-detail" src={post.image} alt={post.title} />
+
+            <nav>
+                <Link className="switch-prev" to={`/listaposts/${parseInt(id) - 1}`}>Prev</Link>
+                <Link className="switch-next" to={`/listaposts/${parseInt(id) + 1}`}>Next</Link>
+            </nav>
         </>
     )
 }

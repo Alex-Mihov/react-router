@@ -14,6 +14,10 @@ body .links a {
   background-color: blueviolet;
 }
 
+.img-detail {
+  margin-bottom: 20px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -26,4 +30,20 @@ body .links a {
 
 .post img {
   width: 50%;
+}
+
+.switch-prev {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  background-color: red;
+}
+
+.switch-next {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  background-color: green;
 }
