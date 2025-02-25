@@ -19,3 +19,11 @@ body .links a {
   flex-direction: column;
   text-align: center;
 }
+
+.container .post {
+  width: 50%;
+}
+
+.post img {
+  width: 50%;
+}

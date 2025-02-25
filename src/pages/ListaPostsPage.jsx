@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function ListaPostsPage() {
 
@@ -27,8 +28,10 @@ export default function ListaPostsPage() {
                         <div className="post" key={post.id}>
                             <h2>{post.title}</h2>
                             <img src={post.image} alt={post.title} />
+                            <br />
                             <span>{post.content}</span>
-                            <h5>{post.tags}</h5>
+                            <h5>{post.tags.join(", ")}</h5>
+                            <Link to={`/listaposts/${post.id}`}>Dettagli</Link>
                         </div>
                     ))
                 }
